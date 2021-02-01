@@ -2,7 +2,7 @@ import torch
 import torchvision
 
 
-#### Taken from https://gist.github.com/alper111/8233cdb0414b4cb5853f2f730ab95a49\
+#### Reworked from https://gist.github.com/alper111/8233cdb0414b4cb5853f2f730ab95a49\
 
 class VGGPerceptualLoss(torch.nn.Module):
     def __init__(self, resize=True):
@@ -20,6 +20,7 @@ class VGGPerceptualLoss(torch.nn.Module):
         self.mean = torch.nn.Parameter(torch.tensor([0.485, 0.456, 0.406]).view(1,3,1,1))
         self.std = torch.nn.Parameter(torch.tensor([0.229, 0.224, 0.225]).view(1,3,1,1))
         self.resize = resize
+        self.weights = [1.0/2.6, 1.0/4.8, 1.0/3.7, 1.0/5.6, 10.0/1.5]
 
     def forward(self, input, target):
         if input.shape[1] != 3:
@@ -33,8 +34,9 @@ class VGGPerceptualLoss(torch.nn.Module):
         loss = 0.0
         x = input
         y = target
-        for block in self.blocks:
+        loss += torch.nn.functional.l1_loss(x, y)
+        for i, block in enumerate(self.blocks):
             x = block(x)
             y = block(y)
-            loss += torch.nn.functional.l1_loss(x, y)
+            loss += self.weights[i]*torch.nn.functional.l1_loss(x, y)
         return loss

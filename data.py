@@ -2,6 +2,7 @@ from torch.utils.data import Dataset
 import os
 import cv2
 import torch
+import numpy as np
 
 
 class PairImageDataset(Dataset):
@@ -29,9 +30,9 @@ class PairImageDataset(Dataset):
         output_image = cv2.imread(self.output_dir+f"/{image_name}")
         output_image = cv2.cvtColor(output_image, cv2.COLOR_BGR2RGB)
         h, w, _ = input_image.shape
-        h, w = (w//32)*32, (h//32)*32
-        input_image = input_image[:w,:h,:]
-        output_image = output_image[:h,:w,:]
+        h, w = (h//32)*32, (w//32)*32
+        input_image = np.float32(input_image[:h,:w,:])/255
+        output_image = np.float32(output_image[:h,:w,:])/255
         if self.transform:
             input_image = self.transform(input_image)
             output_image = self.transform(output_image)
