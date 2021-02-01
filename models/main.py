@@ -9,7 +9,8 @@ class DeepVideoPriorColor(pl.LightningModule):
         super().__init__()
         self.unet = UNet(3, 3, 32)
         self.loss = VGGPerceptualLoss()
-
+    def forward(self, x):
+        return self.unet(x)
     def training_step(self, batch, batch_idx):
         _, (grey_image, color_image) = batch
         output = self.unet(grey_image)
