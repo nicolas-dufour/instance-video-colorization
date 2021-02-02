@@ -16,3 +16,7 @@
 2021-02-02 18:07:36,893 INFO    MainThread:872 [wandb_init.py:_resume_backend():244] resuming backend
 2021-02-02 18:15:29,874 INFO    MainThread:872 [wandb_init.py:_pause_backend():239] pausing backend
 2021-02-02 18:16:56,252 INFO    MainThread:872 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 18:16:58,780 INFO    MainThread:872 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 19:36:32,262 INFO    MainThread:872 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 19:36:58,302 INFO    MainThread:872 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 19:37:02,124 INFO    MainThread:872 [wandb_init.py:_resume_backend():244] resuming backend

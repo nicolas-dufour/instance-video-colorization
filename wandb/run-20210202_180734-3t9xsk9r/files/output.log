@@ -18,3 +18,43 @@ LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
 
 
 
+[master 36c0cce] Added video loggining
+ 38 files changed, 2607 insertions(+), 7 deletions(-)
+ rewrite models/__pycache__/main.cpython-36.pyc (78%)
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/files/config.yaml
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/files/output.log
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/files/requirements.txt
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/files/wandb-metadata.json
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/files/wandb-summary.json
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/logs/debug-internal.log
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/logs/debug.log
+ create mode 100644 wandb/run-20210202_180544-2veizjyh/run-2veizjyh.wandb
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/files/config.yaml
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/files/output.log
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/files/requirements.txt
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/files/wandb-metadata.json
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/files/wandb-summary.json
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/logs/debug-internal.log
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/logs/debug.log
+ create mode 100644 wandb/run-20210202_180652-1uirhcg1/run-1uirhcg1.wandb
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/config.yaml
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_0_51887080.mp4
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_1_4e8ac300.mp4
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_2_01970f17.mp4
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_3_dff6d700.mp4
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_4_759cf97b.mp4
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/output.log
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/requirements.txt
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/wandb-metadata.json
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/logs/debug-internal.log
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/logs/debug.log
+ create mode 100644 wandb/run-20210202_180734-3t9xsk9r/run-3t9xsk9r.wandb
+To https://github.com/nicolas-dufour/instance-video-colorization.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://nicolas-dufour:8dS29ta%26v%26N%2A77d@github.com/nicolas-dufour/instance-video-colorization.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
