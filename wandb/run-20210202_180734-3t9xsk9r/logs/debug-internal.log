@@ -1,0 +1,464 @@
+2021-02-02 18:07:34,829 INFO    MainThread:894 [internal.py:wandb_internal():81] W&B internal server running at pid: 894
+2021-02-02 18:07:34,831 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: check_version
+2021-02-02 18:07:34,831 DEBUG   SenderThread:894 [sender.py:send():117] send: header
+2021-02-02 18:07:34,831 INFO    WriterThread:894 [datastore.py:open_for_write():77] open: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/run-3t9xsk9r.wandb
+2021-02-02 18:07:34,832 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:07:34,832 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: check_version
+2021-02-02 18:07:34,834 DEBUG   Thread-4  :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2021-02-02 18:07:34,886 DEBUG   Thread-4  :894 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53641
+2021-02-02 18:07:34,904 DEBUG   SenderThread:894 [sender.py:send():117] send: run
+2021-02-02 18:07:34,906 DEBUG   SenderThread:894 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-02 18:07:34,916 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:35,138 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:07:35,145 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: run_start
+2021-02-02 18:07:35,146 INFO    SenderThread:894 [dir_watcher.py:__init__():165] watching files in: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files
+2021-02-02 18:07:35,146 INFO    SenderThread:894 [sender.py:_start_run_threads():596] run started: 3t9xsk9r with start time 1612289254
+2021-02-02 18:07:35,146 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:07:35,146 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:07:35,828 DEBUG   HandlerThread:894 [tpu_cluster_resolver.py:<module>():36] Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-02-02 18:07:36,150 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:07:36,623 DEBUG   HandlerThread:894 [meta.py:__init__():34] meta init
+2021-02-02 18:07:36,623 DEBUG   HandlerThread:894 [meta.py:__init__():48] meta init done
+2021-02-02 18:07:36,623 DEBUG   HandlerThread:894 [meta.py:probe():190] probe
+2021-02-02 18:07:36,629 DEBUG   HandlerThread:894 [meta.py:_setup_git():180] setup git
+2021-02-02 18:07:36,631 DEBUG   HandlerThread:894 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-02 18:07:36,647 DEBUG   HandlerThread:894 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=None)
+2021-02-02 18:07:36,654 DEBUG   HandlerThread:894 [meta.py:_setup_git():187] setup git done
+2021-02-02 18:07:36,655 DEBUG   HandlerThread:894 [meta.py:_save_pip():52] save pip
+2021-02-02 18:07:36,655 DEBUG   HandlerThread:894 [meta.py:_save_pip():66] save pip done
+2021-02-02 18:07:36,655 DEBUG   HandlerThread:894 [meta.py:probe():231] probe done
+2021-02-02 18:07:36,661 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:07:36,661 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-02-02 18:07:36,677 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 18:07:36,677 INFO    HandlerThread:894 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 18:07:36,684 DEBUG   Thread-11 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:36,747 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:07:36,747 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 18:07:36,747 INFO    HandlerThread:894 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 18:07:36,747 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:07:36,747 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:07:36,750 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:36,751 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 18:07:36,751 INFO    HandlerThread:894 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 18:07:36,767 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 18:07:36,767 INFO    HandlerThread:894 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 18:07:36,887 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 18:07:36,888 INFO    HandlerThread:894 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 18:07:36,891 DEBUG   Thread-11 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:07:36,903 DEBUG   Thread-11 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:07:36,942 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:07:36,945 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:36,946 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:36,980 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 18:07:36,981 INFO    HandlerThread:894 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 18:07:36,981 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:37,149 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/requirements.txt
+2021-02-02 18:07:37,151 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-metadata.json
+2021-02-02 18:07:37,151 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:07:37,213 DEBUG   Thread-11 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/wandb-metadata.json?Expires=1612375656&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=BA7Ohn07Z6GtfNAuNyhmNWtMhMH7o1oogS756uS9vZ%2BR0ddiBe766bnP6fnXBHVBjCJfFy0p%2BuoRKtyhbhejGctGeGgHQ0CyzAyrRshRjPFtzeTD8Qg2fsFw4uI6JWG%2BWNOSeNrJpv5S3HW%2FWGQjdhBwc96kSd2%2FIVgg6Wte2bxD5B%2FW1ap0JYgCV6lduKd98PB87dfQ2oh4s%2F5EM9yE0g0C0oq%2FORCVGnIAkDWJ%2FpOBWS2ubqnyKsJKQJRHApJFEhgKQ%2FEmI2ixCa4kZKgF8suVX%2BsSDYzK4dMMU6jesM4bDuAoYyDtlSmKqIyDzyofix2UXzlOZWXWhUzThMzOmQ%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:07:37,216 INFO    Thread-11 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/3ob9ci8l-wandb-metadata.json
+2021-02-02 18:07:38,984 DEBUG   Thread-5  :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:39,218 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:40,310 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:41,789 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:42,152 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:07:44,751 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:44,946 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:49,186 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:49,388 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:51,947 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:07:51,948 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:07:51,948 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:07:51,952 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:52,139 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:07:53,674 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:53,867 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:56,158 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:07:57,192 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:07:57,192 INFO    SenderThread:894 [sender.py:_save_file():682] saving file media/videos/Car_0_51887080.mp4 with policy now
+2021-02-02 18:07:57,202 DEBUG   SenderThread:894 [sender.py:send():117] send: history
+2021-02-02 18:07:57,202 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:07:57,203 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:07:57,204 DEBUG   Thread-15 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:07:57,426 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:07:57,450 DEBUG   Thread-15 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:07:57,454 DEBUG   Thread-15 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:07:58,114 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:07:58,132 DEBUG   Thread-15 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/media/videos/Car_0_51887080.mp4?Expires=1612375677&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=RuVuBGu7zhHaPunl1gNo9VV8gxyHAff1QwJiOageIb4x%2B8bsdX3R7k5pPJfR4jGAWl2FTtfMqGbFypbBjgxaj1B6bccjJUMhxyHy7KOKILPCNQTp2%2B%2FytPgBlMx9Ea7SM4sFXI0OCGw66D68z9s%2FHbNRGOmI%2FXJ7rhlL6s%2FONOSzZmVcpxDTz0r6UX0%2FsGFKCStqSpjvr0ASvHjpQF9%2BWaZ8bcWG%2BrMHJ4z0xgQxh3O8fK%2B%2B%2Fb1nXOGIk5Nbp3HGTnNsR2yIWoE1gVH08EX3AIowAPwQBekpBvg8hzJpSBjxFjhwwkJyD6DGvFyOD9ckdGuEfc1sjhHncPmlmkMhxg%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:07:58,134 INFO    Thread-15 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/1hwfue62-media/videos/Car_0_51887080.mp4
+2021-02-02 18:07:58,159 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:07:58,159 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_0_51887080.mp4
+2021-02-02 18:07:58,159 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos
+2021-02-02 18:07:58,159 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media
+2021-02-02 18:08:00,310 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:02,555 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:02,765 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:06,990 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:07,143 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:08:07,143 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:08:07,144 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:08:07,146 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:08:07,198 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:07,333 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:08:11,462 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:11,662 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:15,931 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:16,130 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:20,374 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:20,571 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:22,337 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:08:22,337 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:08:22,337 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:08:22,340 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:08:22,528 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:08:24,832 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:25,035 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:29,271 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:29,484 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:33,706 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:33,905 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:37,554 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:08:37,555 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:08:37,555 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:08:37,558 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:08:37,744 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:08:38,148 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:42,585 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:47,027 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:47,231 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:08:51,483 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:08:52,748 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:08:52,748 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:08:52,748 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:08:52,751 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:08:52,952 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:08:55,924 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:00,362 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:00,563 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:09:04,813 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:07,956 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:09:07,956 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:09:07,956 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:09:07,959 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:09:08,154 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:09:09,249 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:13,694 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:13,910 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:09:18,133 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:22,568 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:23,163 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:09:23,163 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:09:23,164 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:09:23,166 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:09:23,358 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:09:27,005 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:27,221 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:09:28,257 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:09:30,180 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:09:30,181 INFO    SenderThread:894 [sender.py:_save_file():682] saving file media/videos/Car_1_4e8ac300.mp4 with policy now
+2021-02-02 18:09:30,183 DEBUG   SenderThread:894 [sender.py:send():117] send: history
+2021-02-02 18:09:30,184 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:09:30,184 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:09:30,188 DEBUG   Thread-16 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:09:30,258 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:09:30,258 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_1_4e8ac300.mp4
+2021-02-02 18:09:30,259 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos
+2021-02-02 18:09:30,392 DEBUG   Thread-16 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:09:30,396 DEBUG   Thread-16 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:09:31,010 DEBUG   Thread-16 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/media/videos/Car_1_4e8ac300.mp4?Expires=1612375770&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=BjTOt%2BhRBjbbbYxrkEEdXrgiLfMtsXZYDn0mu69M7m1JMm6id6DQG6zsUn1TGh9bYwgFBSvuKowB9Jjvwudnerx7Oe9bfDwR4cDm%2FFHb4g78KAS%2BUJibvCNQiB9HRPGWDTuP8SGKgB4fmsjmH5sFNlK5g7T0%2F7lQvo2PMlDa06DudI7wXInqbtZ0dk8UcpqdqCvYlKskiDdBTvXijlllbDsQLXDwzygJ45B7o0%2BJzSXnLBZLC3Yb3wlXl6bJphXopHCj1v3ZAdU3WRAShTLHnPyYr4YPrr%2FZKModbzC3MSJ91MTfWiW7LP7PMY2FhYpTJ4QJL1WnTybWoxiV4uot3g%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:09:31,012 INFO    Thread-16 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/rvzm4tmy-media/videos/Car_1_4e8ac300.mp4
+2021-02-02 18:09:31,451 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:35,897 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:38,388 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:09:38,388 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:09:38,388 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:09:38,391 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:09:38,576 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:09:40,339 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:40,543 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:09:44,780 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:49,224 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:53,581 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:09:53,581 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:09:53,581 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:09:53,584 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:09:53,773 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:09:53,775 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:09:53,976 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:09:58,102 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:02,541 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:06,981 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:07,189 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:10:08,776 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:10:08,777 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:10:08,777 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:10:08,779 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:10:08,967 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:10:11,416 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:15,854 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:20,294 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:20,500 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:10:23,971 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:10:23,971 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:10:23,971 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:10:23,974 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:10:24,166 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:10:24,761 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:29,201 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:33,659 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:33,873 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:10:38,099 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:39,172 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:10:39,172 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:10:39,172 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:10:39,197 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:10:39,396 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:10:42,553 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:46,985 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:47,189 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:10:51,432 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:10:54,400 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:10:54,400 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:10:54,400 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:10:54,403 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:10:54,601 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:10:55,868 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:00,312 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:00,519 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:11:01,302 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:11:03,480 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:11:03,480 INFO    SenderThread:894 [sender.py:_save_file():682] saving file media/videos/Car_2_01970f17.mp4 with policy now
+2021-02-02 18:11:03,483 DEBUG   SenderThread:894 [sender.py:send():117] send: history
+2021-02-02 18:11:03,483 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:11:03,484 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:11:03,488 DEBUG   Thread-17 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:11:03,696 DEBUG   Thread-17 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:11:03,700 DEBUG   Thread-17 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:11:04,304 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:11:04,304 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_2_01970f17.mp4
+2021-02-02 18:11:04,304 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos
+2021-02-02 18:11:04,322 DEBUG   Thread-17 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/media/videos/Car_2_01970f17.mp4?Expires=1612375863&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=QAGdlEOKyXApz%2B2NPGijNHP%2FmloYvp7iKXoMKkfRwSkAqzJyJjD9%2B%2FInyZA%2FYPIRNIJvmK4YPHeNSAp9YszVSblBL45%2Ff9bJRg8EieK1S52y4gwFkARpSeCMOh3TlxWd0ilfd5Cp0e7Rh6Z2CYHfQJw%2Fg3BaYrx%2BMaMAN5JcTOSXpctjz9J8wGfN9MIEHOLUi%2FPH%2Fj3q1k9KWHEaEfMND2JD2qSBgo%2FAGFvgXd7k8AmRjC%2BffKyFoQfGxf%2BV4I5QzSBoKiVSPM7HmOOWcBH8%2BG%2Fzvw00zZZefeHFOp23ZhJZcvrtwY3TRJCr2S1qSFtAJUWpmEiUWtBcF7JZIN3yDA%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:11:04,324 INFO    Thread-17 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/32cwnij9-media/videos/Car_2_01970f17.mp4
+2021-02-02 18:11:04,754 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:09,189 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:09,605 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:11:09,605 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:11:09,605 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:11:09,607 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:11:09,789 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:11:13,664 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:13,908 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:11:18,105 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:22,545 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:24,793 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:11:24,793 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:11:24,794 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:11:24,796 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:11:25,005 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:11:26,982 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:27,182 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:11:31,446 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:35,882 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:40,010 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:11:40,010 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:11:40,010 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:11:40,013 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:11:40,211 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:11:40,321 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:40,529 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:11:44,760 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:49,212 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:53,656 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:11:53,870 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:11:55,220 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:11:55,220 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:11:55,220 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:11:55,223 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:11:55,469 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:11:58,091 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:02,525 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:06,972 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:07,174 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:12:10,472 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:12:10,473 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:12:10,473 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:12:10,475 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:12:10,671 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:12:11,412 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:15,860 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:20,299 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:20,500 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:12:24,741 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:25,675 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:12:25,677 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:12:25,677 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:12:25,680 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:12:25,887 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:12:29,183 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:33,623 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:33,839 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:12:34,362 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:12:36,980 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:12:36,980 INFO    SenderThread:894 [sender.py:_save_file():682] saving file media/videos/Car_3_dff6d700.mp4 with policy now
+2021-02-02 18:12:36,983 DEBUG   SenderThread:894 [sender.py:send():117] send: history
+2021-02-02 18:12:36,983 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:12:36,983 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:12:36,988 DEBUG   Thread-18 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:12:37,186 DEBUG   Thread-18 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:12:37,190 DEBUG   Thread-18 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:12:37,364 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:12:37,364 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_3_dff6d700.mp4
+2021-02-02 18:12:37,365 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos
+2021-02-02 18:12:37,832 DEBUG   Thread-18 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/media/videos/Car_3_dff6d700.mp4?Expires=1612375957&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=A0bTMcNbYMlb3Z0Lfs5mU7gk9KxTHV1xv706aNKfqkxV2NrjVHqzowrwIE1pwJp5YZyVx1sN39fNFNBQJE3bPyEzkjeTjBUPArFeJ%2BONrBVU4MsM1KI5i7DInHoBvBNpaYCUZqyIJ5ouzYhWnWLdzui8x5L7by9T%2B%2BTC5ZB1FdU16ZSJzorupUPLVoTkPS53L4F6ZaFl0tfk8s%2BHmvrkBPvrXvypYrwxgdCzM8AucMdwGl9av4nNCb6RkHKEtZ5FkdrGxKkFzFyupEbHMMTdxfiXlP3Zq6jgGkRodwvavNIdtSlX1wdBMPti0juQ10gW5awkd4qQyxHPKFBfD003cg%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:12:37,834 INFO    Thread-18 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/9mk20u71-media/videos/Car_3_dff6d700.mp4
+2021-02-02 18:12:38,063 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:40,891 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:12:40,892 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:12:40,892 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:12:40,894 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:12:41,081 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:12:42,510 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:46,947 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:51,387 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:55,827 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:12:56,085 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:12:56,086 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:12:56,086 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:12:56,088 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:12:56,281 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:13:00,280 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:04,731 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:04,959 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:13:09,171 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:11,329 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:13:11,329 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:13:11,329 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:13:11,338 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:13:16,030 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:13:16,032 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:18,039 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:22,510 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:26,952 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:31,034 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:13:31,034 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:13:31,034 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:13:31,037 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:13:31,236 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:13:31,401 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:35,856 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:36,102 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:13:40,324 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:44,765 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:46,241 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:13:46,241 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:13:46,241 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:13:46,250 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:13:46,447 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:13:49,201 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:53,637 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:13:58,078 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:01,450 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:14:01,450 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:14:01,451 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:14:01,453 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:14:01,655 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:14:02,517 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:06,958 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:07,170 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:14:08,419 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:14:10,904 DEBUG   SenderThread:894 [sender.py:send():117] send: files
+2021-02-02 18:14:10,904 INFO    SenderThread:894 [sender.py:_save_file():682] saving file media/videos/Car_4_759cf97b.mp4 with policy now
+2021-02-02 18:14:10,913 DEBUG   SenderThread:894 [sender.py:send():117] send: history
+2021-02-02 18:14:10,913 DEBUG   SenderThread:894 [sender.py:send():117] send: summary
+2021-02-02 18:14:10,913 INFO    SenderThread:894 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 18:14:10,917 DEBUG   Thread-19 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:14:11,117 DEBUG   Thread-19 :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:14:11,122 DEBUG   Thread-19 :894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 18:14:11,400 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:11,420 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/wandb-summary.json
+2021-02-02 18:14:11,421 INFO    Thread-8  :894 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos/Car_4_759cf97b.mp4
+2021-02-02 18:14:11,421 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/media/videos
+2021-02-02 18:14:11,779 DEBUG   Thread-19 :894 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3t9xsk9r/media/videos/Car_4_759cf97b.mp4?Expires=1612376051&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=dji%2F8YGQPM6CSBaUyeuI9QITIBgAdntFXhSxs5WzjmsB%2Baqki6XpspgKhklvgKM8o42sg53H1ArHvunBQcKuSYcHwmqwssCXXK5poloAuWfhpyrkFb2APo6YrrmfTIhsYUGaEmFYwT57Cv5X6DaoNCZvfiwPKvYpGCwg9wcmtNRmqXgssI9vlxO1n5%2FeLEjlhVAWxlhpoXXAU2wrwDkAHIGuVVrBIHvHeY31udafi0D%2FKY%2FgyHD%2BsR1gwsxdxSpQuTep%2BTNGzsPwd9YLRQAyKvQVrQFfBtIXX3RhZL6RfPM2rzOh%2Fk7bKnjzm8kD6d%2FLt0vViWUhpfnqrZkXk0Yghg%3D%3D HTTP/1.1" 200 0
+2021-02-02 18:14:11,782 INFO    Thread-19 :894 [upload_job.py:push():133] Uploaded file /tmp/tmpl_kvss1iwandb/39oqpjj0-media/videos/Car_4_759cf97b.mp4
+2021-02-02 18:14:15,835 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:16,659 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:14:16,660 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:14:16,660 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:14:16,662 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:14:16,870 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:14:20,307 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:24,747 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:29,190 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:31,874 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:14:31,874 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:14:31,874 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:14:31,877 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:14:32,065 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:14:33,628 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:38,071 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:38,291 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:14:42,551 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:46,998 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:47,069 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:14:47,069 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:14:47,070 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:14:47,072 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:14:47,275 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:14:51,453 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:14:55,906 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:00,342 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:02,279 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:15:02,279 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:15:02,279 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:15:02,282 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:15:02,481 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:15:04,788 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:09,231 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:09,455 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:15:13,694 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:17,485 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:15:17,485 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:15:17,485 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:15:17,489 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:15:17,684 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:15:18,129 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:22,572 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:27,021 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:29,875 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 18:15:29,875 INFO    HandlerThread:894 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 18:15:29,957 DEBUG   SenderThread:894 [sender.py:send():117] send: stats
+2021-02-02 18:15:30,468 INFO    Thread-8  :894 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_180734-3t9xsk9r/files/output.log
+2021-02-02 18:15:32,688 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:15:32,688 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:15:32,688 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:15:32,690 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:15:32,870 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:15:47,873 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:15:47,873 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:15:47,873 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:15:47,875 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:15:48,059 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:16:00,160 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:16:03,062 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:16:03,062 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:16:03,063 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:16:03,064 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:16:03,258 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:16:18,261 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:16:18,261 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:16:18,261 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:16:18,263 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:16:18,446 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:16:30,334 DEBUG   Thread-5  :894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3t9xsk9r/file_stream HTTP/1.1" 200 None
+2021-02-02 18:16:33,449 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:16:33,449 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:16:33,450 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:16:33,451 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:16:33,631 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:16:48,634 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: status
+2021-02-02 18:16:48,634 DEBUG   SenderThread:894 [sender.py:send():117] send: request
+2021-02-02 18:16:48,634 DEBUG   SenderThread:894 [sender.py:send_request():126] send_request: status
+2021-02-02 18:16:48,636 DEBUG   SenderThread:894 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 18:16:48,818 DEBUG   SenderThread:894 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 18:16:56,256 DEBUG   HandlerThread:894 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 18:16:56,256 INFO    HandlerThread:894 [handler.py:handle_request_resume():262] starting system metrics thread

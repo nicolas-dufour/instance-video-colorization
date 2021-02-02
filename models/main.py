@@ -13,10 +13,12 @@ import numpy as np
  
 
 class DeepVideoPriorColor(pl.LightningModule):
-    def __init__(self, test_loader, loss='perceptual'):
+    def __init__(self, test_loader, loss='perceptual', irt=True):
         super().__init__()
+        self.irt = irt
         self.test_loader = test_loader
-        self.unet = UNet(3, 3, 32)
+        out_channels = 6 if irt else 3
+        self.unet = UNet(3, out_channels, 32)
         initialize_weights(self.unet)
         if loss=='perceptual': 
             self.loss = VGGPerceptualLoss()
@@ -39,7 +41,16 @@ class DeepVideoPriorColor(pl.LightningModule):
                 os.remove(f)
         _, (grey_image, color_image) = batch
         output = self(grey_image)
-        loss = self.loss(output, color_image)
+        if(self.irt):
+            output_main = output[:,:3,:,:]
+            output_minor = output[:,3:,:,:]
+            diff_map_main,_ = torch.max(torch.abs(output_main - color_image) / (grey_image+1e-1), dim=1, keepdim=True)
+            diff_map_minor,_ = torch.max(torch.abs(output_minor - color_image) / (grey_image+1e-1), dim=1, keepdim=True)
+            confidence_map = torch.lt(diff_map_main, diff_map_minor).repeat(1,3,1,1).float()
+            loss = self.loss(output_main*confidence_map, color_image*confidence_map) \
+                    + self.loss(output_minor*(1-confidence_map), color_image*(1-confidence_map))
+        else:
+            loss = self.loss(output, color_image)
         return loss
 
     def configure_optimizers(self):
@@ -49,7 +60,7 @@ class DeepVideoPriorColor(pl.LightningModule):
         for _, batch in enumerate(tqdm(self.test_loader)):
             paths = list(batch[0])
             bw_images, _ = batch[1]
-            images = self(bw_images.to(self.device))
+            images = self(bw_images.to(self.device))[:,:3,:,:]
             images = 255*torch.clip(images.permute(0,2,3,1),0,1).cpu().detach()
             images = np.uint8(images)
             for i, path in enumerate(paths):

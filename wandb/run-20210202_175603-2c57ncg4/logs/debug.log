@@ -16,3 +16,6 @@
 2021-02-02 17:56:06,229 INFO    MainThread:552 [wandb_init.py:_resume_backend():244] resuming backend
 2021-02-02 17:59:47,106 INFO    MainThread:552 [wandb_init.py:_pause_backend():239] pausing backend
 2021-02-02 17:59:47,142 INFO    MainThread:552 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 17:59:55,293 INFO    MainThread:552 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 18:05:35,594 INFO    MainThread:552 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-02-02 18:05:35,595 INFO    MainThread:552 [wandb_run.py:_restore():1341] restore

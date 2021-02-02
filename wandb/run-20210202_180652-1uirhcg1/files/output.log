@@ -1,0 +1,15 @@
+/usr/local/lib/python3.6/dist-packages/pytorch_lightning/utilities/distributed.py:50: UserWarning: You have set progress_bar_refresh_rate < 20 on Google Colab. This may crash. Consider using progress_bar_refresh_rate >= 20 in Trainer.
+  warnings.warn(*args, **kwargs)
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name | Type   | Params
+--------------------------------
+0 | unet | UNet   | 8.6 M 
+1 | loss | L1Loss | 0     
+--------------------------------
+8.6 M     Trainable params
+0         Non-trainable params
+8.6 M     Total params
+
