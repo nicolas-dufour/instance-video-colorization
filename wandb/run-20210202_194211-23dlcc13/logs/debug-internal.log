@@ -595,3 +595,21 @@
 2021-02-02 19:57:30,371 DEBUG   Thread-5  :1840 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/23dlcc13/file_stream HTTP/1.1" 200 None
 2021-02-02 19:57:33,284 DEBUG   HandlerThread:1840 [handler.py:handle_request():93] handle_request: resume
 2021-02-02 19:57:33,284 INFO    HandlerThread:1840 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 19:57:34,637 DEBUG   Thread-5  :1840 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/23dlcc13/file_stream HTTP/1.1" 200 None
+2021-02-02 19:57:34,813 INFO    Thread-8  :1840 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_194211-23dlcc13/files/output.log
+2021-02-02 19:57:36,208 DEBUG   HandlerThread:1840 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 19:57:36,208 INFO    HandlerThread:1840 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 19:57:36,312 DEBUG   SenderThread:1840 [sender.py:send():117] send: stats
+2021-02-02 19:57:36,814 INFO    Thread-8  :1840 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_194211-23dlcc13/files/output.log
+2021-02-02 19:57:40,987 DEBUG   HandlerThread:1840 [handler.py:handle_request():93] handle_request: status
+2021-02-02 19:57:40,988 DEBUG   SenderThread:1840 [sender.py:send():117] send: request
+2021-02-02 19:57:40,988 DEBUG   SenderThread:1840 [sender.py:send_request():126] send_request: status
+2021-02-02 19:57:40,990 DEBUG   SenderThread:1840 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 19:57:41,168 DEBUG   SenderThread:1840 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 19:57:56,171 DEBUG   HandlerThread:1840 [handler.py:handle_request():93] handle_request: status
+2021-02-02 19:57:56,171 DEBUG   SenderThread:1840 [sender.py:send():117] send: request
+2021-02-02 19:57:56,171 DEBUG   SenderThread:1840 [sender.py:send_request():126] send_request: status
+2021-02-02 19:57:56,173 DEBUG   SenderThread:1840 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 19:57:56,363 DEBUG   SenderThread:1840 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 19:57:57,128 DEBUG   HandlerThread:1840 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 19:57:57,128 INFO    HandlerThread:1840 [handler.py:handle_request_resume():262] starting system metrics thread
