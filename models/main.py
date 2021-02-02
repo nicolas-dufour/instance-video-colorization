@@ -46,7 +46,7 @@ class DeepVideoPriorColor(pl.LightningModule):
             output_minor = output[:,3:,:,:]
             diff_map_main = torch.sum(torch.abs(output_main - color_image)/(grey_image+1e-1) , dim=1, keepdim=True)
             diff_map_minor = torch.sum(torch.abs(output_minor - color_image)/(grey_image+1e-1) , dim=1, keepdim=True)
-            diff_map_minor = torch.maximum(diff_map_minor, 0.01*torch.ones(diff_map_minor.size(),device=self.device))
+            diff_map_minor = torch.maximum(diff_map_minor, 0.005*torch.ones(diff_map_minor.size(),device=self.device))
             confidence_map = torch.lt(diff_map_main, diff_map_minor).repeat(1,3,1,1).float()
             loss = self.loss(output_main*confidence_map, color_image*confidence_map) \
                     + self.loss(output_minor*(1-confidence_map), color_image*(1-confidence_map))

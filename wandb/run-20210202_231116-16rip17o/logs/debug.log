@@ -1,0 +1,46 @@
+2021-02-02 23:11:16,883 INFO    MainThread:694 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-02 23:11:16,884 INFO    MainThread:694 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-02 23:11:16,884 INFO    MainThread:694 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-02 23:11:16,884 INFO    MainThread:694 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f7ced2f54a8>
+2021-02-02 23:11:16,885 INFO    MainThread:694 [wandb_init.py:_log_setup():318] Logging user logs to /content/instance-video-colorization/wandb/run-20210202_231116-16rip17o/logs/debug.log
+2021-02-02 23:11:16,885 INFO    MainThread:694 [wandb_init.py:_log_setup():319] Logging internal logs to /content/instance-video-colorization/wandb/run-20210202_231116-16rip17o/logs/debug-internal.log
+2021-02-02 23:11:19,386 INFO    MainThread:694 [wandb_run.py:_console_start():1399] atexit reg
+2021-02-02 23:11:19,386 INFO    MainThread:694 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-02-02 23:11:19,388 INFO    MainThread:694 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-02-02 23:11:19,388 INFO    MainThread:694 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-02-02 23:11:19,394 INFO    MainThread:694 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:11:19,403 INFO    MainThread:694 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 23:11:19,406 INFO    MainThread:694 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:11:19,418 INFO    MainThread:694 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 23:11:19,631 INFO    MainThread:694 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:11:19,635 INFO    MainThread:694 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 23:19:10,066 INFO    MainThread:694 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:19:11,607 INFO    MainThread:694 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 23:19:18,222 INFO    MainThread:694 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:19:49,861 INFO    MainThread:694 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-02-02 23:19:49,861 INFO    MainThread:694 [wandb_run.py:_restore():1341] restore
+2021-02-02 23:19:50,094 INFO    MainThread:694 [wandb_run.py:_wait_for_finish():1492] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 4729617
+  total_bytes: 4729617
+}
+
+2021-02-02 23:19:52,106 INFO    MainThread:694 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  media_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 4738021
+  total_bytes: 4738021
+}
+
+2021-02-02 23:19:53,409 INFO    MainThread:694 [wandb_run.py:_show_summary():1647] rendering summary
+2021-02-02 23:19:53,411 INFO    MainThread:694 [wandb_run.py:_show_history():1685] rendering history
+2021-02-02 23:19:53,412 INFO    MainThread:694 [wandb_run.py:_show_files():1714] logging synced files
+2021-02-02 23:19:53,418 INFO    MainThread:694 [internal.py:handle_exit():156] Internal process exited

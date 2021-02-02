@@ -18,3 +18,31 @@
 2021-02-02 22:57:53,610 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
 2021-02-02 22:58:00,098 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
 2021-02-02 23:01:57,177 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 23:02:05,508 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:02:45,961 INFO    MainThread:264 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-02-02 23:02:45,962 INFO    MainThread:264 [wandb_run.py:_restore():1341] restore
+2021-02-02 23:02:46,172 INFO    MainThread:264 [wandb_run.py:_wait_for_finish():1492] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 3619683
+  total_bytes: 3619683
+}
+
+2021-02-02 23:02:48,182 INFO    MainThread:264 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  media_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 3633566
+  total_bytes: 3633566
+}
+
+2021-02-02 23:02:49,471 INFO    MainThread:264 [wandb_run.py:_show_summary():1647] rendering summary
+2021-02-02 23:02:49,473 INFO    MainThread:264 [wandb_run.py:_show_history():1685] rendering history
+2021-02-02 23:02:49,474 INFO    MainThread:264 [wandb_run.py:_show_files():1714] logging synced files
+2021-02-02 23:02:49,478 INFO    MainThread:264 [internal.py:handle_exit():156] Internal process exited
