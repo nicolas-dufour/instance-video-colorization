@@ -4,22 +4,39 @@ import torch.nn as nn
 from models.unet import UNet
 from models.loss import VGGPerceptualLoss
 import wandb
+import os
+from tqdm.notebook import tqdm
+import cv2
+import ffmpeg as ffmpeg
+import glob
+import numpy as np
+ 
 
 class DeepVideoPriorColor(pl.LightningModule):
-    def __init__(self, test_loader):
+    def __init__(self, test_loader, loss='perceptual'):
         super().__init__()
         self.test_loader = test_loader
         self.unet = UNet(3, 3, 32)
         initialize_weights(self.unet)
-        self.loss = VGGPerceptualLoss()
+        if loss=='perceptual': 
+            self.loss = VGGPerceptualLoss()
+        elif loss == 'L1':
+            self.loss = nn.L1Loss()
+        elif loss == 'L2':
+            self.loss = nn.MSELoss()
+        else:
+            raise "Loss not supported"
 
     def forward(self, x):
         return self.unet(x)
 
     def training_step(self, batch, batch_idx):
-        if(self.current_epoch%10 == 0):
-            self.compute_video('temp/temp_frames/', 'temp/temp_video.mp4')
-            wandb.log({"Car": wandb.Video("myvideo.mp4")})
+        if(self.current_epoch%10 == 1 and batch_idx==1):
+            self.compute_video('output/temp/temp_frames/', 'output/emp/temp_video.mp4')
+            wandb.log({"Car": wandb.Video("myvideo.mp4", caption = f"Epoch: {self.current_epoch}")})
+            os.remove('output/emp/temp_video.mp4')
+            for f in glob.glob("output/temp/temp_frames/*.jpg"):
+                os.remove(f)
         _, (grey_image, color_image) = batch
         output = self(grey_image)
         loss = self.loss(output, color_image)
@@ -29,12 +46,11 @@ class DeepVideoPriorColor(pl.LightningModule):
         return torch.optim.AdamW(self.parameters(), lr=1e-4)
     
     def compute_video(self, output_frames_dir, output_vid_path):
-        # device = 'cuda:0'
-        # model = model.to(device)
         for _, batch in enumerate(tqdm(self.test_loader)):
             paths = list(batch[0])
             bw_images, _ = batch[1]
-            images = 255*torch.clip(model(self(device)).permute(0,2,3,1),0,1).cpu().detach()
+            images = model(bw_images.to(self(device)))
+            images = 255*torch.clip(images.permute(0,2,3,1),0,1).cpu().detach()
             images = np.uint8(images)
             for i, path in enumerate(paths):
                 cv2.imwrite(output_frames_dir+path, cv2.cvtColor(images[i], cv2.COLOR_RGB2BGR))
