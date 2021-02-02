@@ -27,7 +27,6 @@ class DeepVideoPriorColor(pl.LightningModule):
 def initialize_weights(model):
     for module in model.modules():
         if isinstance(module, nn.Conv2d) or isinstance(module, nn.Linear):        
-            # nn.init.kaiming_normal_(module.weight)
             nn.init.xavier_normal_(module.weight)
             if module.bias is not None:
                 module.bias.data.zero_()
