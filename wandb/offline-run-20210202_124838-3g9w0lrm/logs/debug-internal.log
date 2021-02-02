@@ -1,0 +1,84 @@
+2021-02-02 12:48:42,246 INFO    MainThread:1229 [internal.py:wandb_internal():81] W&B internal server running at pid: 1229
+2021-02-02 12:48:42,249 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: run_start
+2021-02-02 12:48:42,249 INFO    WriterThread:1229 [datastore.py:open_for_write():77] open: /content/instance-video-colorization/wandb/offline-run-20210202_124838-3g9w0lrm/run-3g9w0lrm.wandb
+2021-02-02 12:48:43,014 DEBUG   HandlerThread:1229 [tpu_cluster_resolver.py:<module>():36] Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-02-02 12:48:43,924 DEBUG   HandlerThread:1229 [meta.py:__init__():34] meta init
+2021-02-02 12:48:43,924 DEBUG   HandlerThread:1229 [meta.py:__init__():48] meta init done
+2021-02-02 12:48:43,924 DEBUG   HandlerThread:1229 [meta.py:probe():190] probe
+2021-02-02 12:48:43,931 DEBUG   HandlerThread:1229 [meta.py:_setup_git():180] setup git
+2021-02-02 12:48:43,933 DEBUG   HandlerThread:1229 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-02 12:48:43,946 DEBUG   HandlerThread:1229 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=None)
+2021-02-02 12:48:43,954 DEBUG   HandlerThread:1229 [meta.py:_setup_git():187] setup git done
+2021-02-02 12:48:43,955 DEBUG   HandlerThread:1229 [meta.py:_save_pip():52] save pip
+2021-02-02 12:48:43,956 DEBUG   HandlerThread:1229 [meta.py:_save_pip():66] save pip done
+2021-02-02 12:48:43,956 DEBUG   HandlerThread:1229 [meta.py:probe():231] probe done
+2021-02-02 12:49:06,569 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-02 12:49:06,569 DEBUG   SenderThread:1229 [sender.py:send():117] send: exit
+2021-02-02 12:49:06,569 INFO    SenderThread:1229 [sender.py:send_exit():195] handling exit code: 0
+2021-02-02 12:49:06,571 INFO    SenderThread:1229 [sender.py:send_exit():203] send defer
+2021-02-02 12:49:06,571 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,571 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: poll_exit
+2021-02-02 12:49:06,572 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,572 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 0
+2021-02-02 12:49:06,572 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,572 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,572 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-02-02 12:49:06,572 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 1
+2021-02-02 12:49:06,573 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,573 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 1
+2021-02-02 12:49:06,666 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,667 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,667 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-02-02 12:49:06,667 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 2
+2021-02-02 12:49:06,667 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,667 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 2
+2021-02-02 12:49:06,667 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,668 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,668 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-02-02 12:49:06,668 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 3
+2021-02-02 12:49:06,668 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,668 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 3
+2021-02-02 12:49:06,668 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,668 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,668 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-02-02 12:49:06,668 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 4
+2021-02-02 12:49:06,669 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,669 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 4
+2021-02-02 12:49:06,669 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,669 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,669 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-02-02 12:49:06,669 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 5
+2021-02-02 12:49:06,669 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,669 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 5
+2021-02-02 12:49:06,669 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,669 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,669 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-02-02 12:49:06,670 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 6
+2021-02-02 12:49:06,670 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,670 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 6
+2021-02-02 12:49:06,670 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,670 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,670 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-02-02 12:49:06,670 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 7
+2021-02-02 12:49:06,670 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,670 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 7
+2021-02-02 12:49:06,671 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,671 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,671 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-02-02 12:49:06,671 INFO    SenderThread:1229 [sender.py:send_request_defer():248] send defer: 8
+2021-02-02 12:49:06,671 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 12:49:06,672 INFO    HandlerThread:1229 [handler.py:handle_request_defer():107] handle defer: 8
+2021-02-02 12:49:06,672 DEBUG   SenderThread:1229 [sender.py:send():117] send: final
+2021-02-02 12:49:06,672 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:06,672 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: defer
+2021-02-02 12:49:06,672 INFO    SenderThread:1229 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-02-02 12:49:08,575 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-02 12:49:08,575 DEBUG   SenderThread:1229 [sender.py:send():117] send: request
+2021-02-02 12:49:08,575 DEBUG   SenderThread:1229 [sender.py:send_request():126] send_request: poll_exit
+2021-02-02 12:49:08,577 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: get_summary
+2021-02-02 12:49:08,577 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: sampled_history
+2021-02-02 12:49:08,578 DEBUG   HandlerThread:1229 [handler.py:handle_request():93] handle_request: shutdown
+2021-02-02 12:49:08,579 INFO    HandlerThread:1229 [handler.py:finish():312] shutting down handler
+2021-02-02 12:49:08,672 INFO    WriterThread:1229 [datastore.py:close():258] close: /content/instance-video-colorization/wandb/offline-run-20210202_124838-3g9w0lrm/run-3g9w0lrm.wandb
+2021-02-02 12:49:09,576 INFO    SenderThread:1229 [sender.py:finish():766] shutting down sender
+2021-02-02 12:49:09,576 INFO    MainThread:1229 [internal.py:handle_exit():156] Internal process exited

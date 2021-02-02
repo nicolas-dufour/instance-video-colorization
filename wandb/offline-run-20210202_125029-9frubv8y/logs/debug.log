@@ -1,0 +1,21 @@
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {'mode': 'offline'}
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3685456400>
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_init.py:_log_setup():318] Logging user logs to /content/instance-video-colorization/wandb/offline-run-20210202_125029-9frubv8y/logs/debug.log
+2021-02-02 12:50:29,216 INFO    MainThread:928 [wandb_init.py:_log_setup():319] Logging internal logs to /content/instance-video-colorization/wandb/offline-run-20210202_125029-9frubv8y/logs/debug-internal.log
+2021-02-02 12:50:29,218 INFO    MainThread:928 [wandb_run.py:finish():1056] finishing run Video-instance-colorization/qlwqq0t9
+2021-02-02 12:50:29,218 INFO    MainThread:928 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-02-02 12:50:29,218 INFO    MainThread:928 [wandb_run.py:_restore():1341] restore
+2021-02-02 12:50:29,228 INFO    MainThread:928 [wandb_run.py:_wait_for_finish():1492] got exit ret: 
+2021-02-02 12:50:31,232 INFO    MainThread:928 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+
+2021-02-02 12:50:35,091 INFO    MainThread:928 [wandb_run.py:_console_start():1399] atexit reg
+2021-02-02 12:50:35,092 INFO    MainThread:928 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-02-02 12:50:35,092 INFO    MainThread:928 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-02-02 12:50:35,092 INFO    MainThread:928 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-02-02 12:50:35,098 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:51:03,419 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend

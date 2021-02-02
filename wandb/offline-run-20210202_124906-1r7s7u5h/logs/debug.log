@@ -1,0 +1,39 @@
+2021-02-02 12:49:06,559 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-02 12:49:06,559 INFO    MainThread:928 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-02 12:49:06,560 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-02 12:49:06,560 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {'mode': 'offline'}
+2021-02-02 12:49:06,560 INFO    MainThread:928 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3685456400>
+2021-02-02 12:49:06,560 INFO    MainThread:928 [wandb_init.py:_log_setup():318] Logging user logs to /content/instance-video-colorization/wandb/offline-run-20210202_124906-1r7s7u5h/logs/debug.log
+2021-02-02 12:49:06,560 INFO    MainThread:928 [wandb_init.py:_log_setup():319] Logging internal logs to /content/instance-video-colorization/wandb/offline-run-20210202_124906-1r7s7u5h/logs/debug-internal.log
+2021-02-02 12:49:06,561 INFO    MainThread:928 [wandb_run.py:finish():1056] finishing run Video-instance-colorization/3g9w0lrm
+2021-02-02 12:49:06,562 INFO    MainThread:928 [wandb_run.py:_atexit_cleanup():1369] got exitcode: 0
+2021-02-02 12:49:06,562 INFO    MainThread:928 [wandb_run.py:_restore():1341] restore
+2021-02-02 12:49:06,572 INFO    MainThread:928 [wandb_run.py:_wait_for_finish():1492] got exit ret: 
+2021-02-02 12:49:08,576 INFO    MainThread:928 [wandb_run.py:_wait_for_finish():1492] got exit ret: done: true
+exit_result {
+}
+
+2021-02-02 12:49:12,440 INFO    MainThread:928 [wandb_run.py:_console_start():1399] atexit reg
+2021-02-02 12:49:12,445 INFO    MainThread:928 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-02-02 12:49:12,445 INFO    MainThread:928 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-02-02 12:49:12,445 INFO    MainThread:928 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-02-02 12:49:12,446 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:49:21,307 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 12:49:22,310 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:49:29,117 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 12:49:30,112 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:49:38,711 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 12:50:03,479 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:50:05,886 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 12:50:07,190 INFO    MainThread:928 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 12:50:13,086 INFO    MainThread:928 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 12:50:13,105 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-02 12:50:13,105 INFO    MainThread:928 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-02 12:50:13,106 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-02 12:50:13,106 INFO    MainThread:928 [wandb_setup.py:_flush():70] setting login settings: {'mode': 'offline'}
+2021-02-02 12:50:13,106 INFO    MainThread:928 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3685456400>
+2021-02-02 12:50:13,106 INFO    MainThread:928 [wandb_init.py:_log_setup():318] Logging user logs to /content/instance-video-colorization/wandb/offline-run-20210202_125013-qlwqq0t9/logs/debug.log
+2021-02-02 12:50:13,106 INFO    MainThread:928 [wandb_init.py:_log_setup():319] Logging internal logs to /content/instance-video-colorization/wandb/offline-run-20210202_125013-qlwqq0t9/logs/debug-internal.log
+2021-02-02 12:50:13,107 INFO    MainThread:928 [wandb_run.py:finish():1056] finishing run Video-instance-colorization/1r7s7u5h
+2021-02-02 12:50:13,108 INFO    MainThread:928 [wandb_init.py:_jupyter_teardown():249] cleaning up jupyter logic
+2021-02-02 12:50:13,108 INFO    MainThread:928 [jupyter.py:save_history():208] not saving jupyter history

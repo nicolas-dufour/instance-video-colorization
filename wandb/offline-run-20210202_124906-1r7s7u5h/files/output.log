@@ -1,0 +1,35 @@
+Usage: wandb [OPTIONS] COMMAND [ARGS]...
+Try 'wandb --help' for help.
+
+Error: No such command 'log'.
+Usage: wandb [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  agent       Run the W&B agent
+  artifact    Commands for interacting with...
+  controller  Run the W&B local sweep controller
+  disabled    Disable W&B.
+  docker      W&B docker lets you run your code...
+  docker-run  Simple wrapper for `docker run`...
+  enabled     Enable W&B.
+  init        Configure a directory with
+              Weights...
+
+  local       Launch local W&B container...
+  login       Login to Weights & Biases
+  offline     Disable W&B sync
+  online      Enable W&B sync
+  pull        Pull files from Weights & Biases
+  restore     Restore code, config and docker...
+  status      Show configuration settings
+  sweep       Create a sweep
+  sync        Upload an offline training...
+  verify      Verify your local instance
+[34m[1mwandb[0m: You can find your API key in your browser here: https://wandb.ai/authorize
+[34m[1mwandb[0m: Paste an API key from your profile and hit enter: 
+Aborted!
+[34m[1mwandb[0m: Appending key for api.wandb.ai to your netrc file: /root/.netrc
