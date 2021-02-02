@@ -1,0 +1,199 @@
+2021-02-02 17:55:04,921 INFO    MainThread:495 [internal.py:wandb_internal():81] W&B internal server running at pid: 495
+2021-02-02 17:55:04,923 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: check_version
+2021-02-02 17:55:04,923 DEBUG   SenderThread:495 [sender.py:send():117] send: header
+2021-02-02 17:55:04,923 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:04,923 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: check_version
+2021-02-02 17:55:04,923 INFO    WriterThread:495 [datastore.py:open_for_write():77] open: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/run-3b0yc1xc.wandb
+2021-02-02 17:55:04,926 DEBUG   Thread-4  :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2021-02-02 17:55:04,977 DEBUG   Thread-4  :495 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 53641
+2021-02-02 17:55:04,996 DEBUG   SenderThread:495 [sender.py:send():117] send: run
+2021-02-02 17:55:04,999 DEBUG   SenderThread:495 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-02 17:55:05,009 DEBUG   SenderThread:495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:05,218 DEBUG   SenderThread:495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:05,224 INFO    SenderThread:495 [dir_watcher.py:__init__():165] watching files in: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files
+2021-02-02 17:55:05,224 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: run_start
+2021-02-02 17:55:05,224 INFO    SenderThread:495 [sender.py:_start_run_threads():596] run started: 3b0yc1xc with start time 1612288504
+2021-02-02 17:55:05,225 DEBUG   SenderThread:495 [sender.py:send():117] send: summary
+2021-02-02 17:55:05,225 INFO    SenderThread:495 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 17:55:05,882 DEBUG   HandlerThread:495 [tpu_cluster_resolver.py:<module>():36] Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2021-02-02 17:55:06,231 INFO    Thread-8  :495 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-summary.json
+2021-02-02 17:55:06,654 DEBUG   HandlerThread:495 [meta.py:__init__():34] meta init
+2021-02-02 17:55:06,654 DEBUG   HandlerThread:495 [meta.py:__init__():48] meta init done
+2021-02-02 17:55:06,654 DEBUG   HandlerThread:495 [meta.py:probe():190] probe
+2021-02-02 17:55:06,661 DEBUG   HandlerThread:495 [meta.py:_setup_git():180] setup git
+2021-02-02 17:55:06,662 DEBUG   HandlerThread:495 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-02-02 17:55:06,678 DEBUG   HandlerThread:495 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/content/instance-video-colorization, universal_newlines=False, shell=None, istream=None)
+2021-02-02 17:55:06,686 DEBUG   HandlerThread:495 [meta.py:_setup_git():187] setup git done
+2021-02-02 17:55:06,686 DEBUG   HandlerThread:495 [meta.py:_save_pip():52] save pip
+2021-02-02 17:55:06,687 DEBUG   HandlerThread:495 [meta.py:_save_pip():66] save pip done
+2021-02-02 17:55:06,687 DEBUG   HandlerThread:495 [meta.py:probe():231] probe done
+2021-02-02 17:55:06,690 DEBUG   SenderThread:495 [sender.py:send():117] send: files
+2021-02-02 17:55:06,690 INFO    SenderThread:495 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-02-02 17:55:06,699 DEBUG   Thread-11 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:06,700 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: status
+2021-02-02 17:55:06,700 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:06,700 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: status
+2021-02-02 17:55:06,702 DEBUG   SenderThread:495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:06,709 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 17:55:06,709 INFO    HandlerThread:495 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 17:55:06,778 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 17:55:06,778 INFO    HandlerThread:495 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 17:55:06,778 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 17:55:06,778 INFO    HandlerThread:495 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 17:55:06,787 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 17:55:06,787 INFO    HandlerThread:495 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 17:55:06,898 DEBUG   SenderThread:495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:06,901 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:06,902 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:06,911 DEBUG   Thread-11 :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:06,915 DEBUG   Thread-11 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 17:55:06,918 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 17:55:06,918 INFO    HandlerThread:495 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 17:55:06,997 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: resume
+2021-02-02 17:55:06,997 INFO    HandlerThread:495 [handler.py:handle_request_resume():262] starting system metrics thread
+2021-02-02 17:55:06,998 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:07,231 INFO    Thread-8  :495 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/requirements.txt
+2021-02-02 17:55:07,233 INFO    Thread-8  :495 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log
+2021-02-02 17:55:07,233 INFO    Thread-8  :495 [dir_watcher.py:_on_file_created():213] file/dir created: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-metadata.json
+2021-02-02 17:55:07,238 DEBUG   Thread-11 :495 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3b0yc1xc/wandb-metadata.json?Expires=1612374906&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=faoDa9xva%2BJECzjq8UPdl4%2FtfaAKtkZcKBD5L8mzRSbjFbxTim4JCVHdDum09Ui3lf%2FRgbeJJhj3yIssWkwGXSrnGVofBl4giTOdKcLHbsbJaEpYmnlbNk5zD%2Fv%2FQHnHMgmxX3TVLmGXuHgGqAxJNmTeqZ9ykC2p6LXKSFN64zUTBHxI5qk4j02rEQp%2BKbcDEoJliInfB896J8wwxye8Tmt%2Fe5QKOBT%2F4LY7i7Ze%2FOqh4sFjT4YJAMl3O5VWA7lQYsY9TdDB68Z043OQ4PIOLqo1V7v6sxEaK6grZtv3DlrrbZpRZ1NJnB2S5pgcbHOQHmVNe%2F8u34v1ZmFaD%2B3nBw%3D%3D HTTP/1.1" 200 0
+2021-02-02 17:55:07,241 INFO    Thread-11 :495 [upload_job.py:push():133] Uploaded file /tmp/tmppuvq8cp1wandb/22qc5b20-wandb-metadata.json
+2021-02-02 17:55:09,000 DEBUG   Thread-5  :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:09,211 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:10,332 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:11,806 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:12,233 INFO    Thread-8  :495 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log
+2021-02-02 17:55:14,774 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:14,980 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:19,221 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:19,417 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:21,902 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: status
+2021-02-02 17:55:21,902 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:21,902 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: status
+2021-02-02 17:55:21,905 DEBUG   SenderThread:495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:22,094 DEBUG   SenderThread:495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:23,665 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:23,879 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:26,238 INFO    Thread-8  :495 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log
+2021-02-02 17:55:27,666 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:28,096 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:28,239 INFO    Thread-8  :495 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log
+2021-02-02 17:55:28,305 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: pause
+2021-02-02 17:55:28,305 INFO    HandlerThread:495 [handler.py:handle_request_pause():267] stopping system metrics thread
+2021-02-02 17:55:28,402 DEBUG   SenderThread:495 [sender.py:send():117] send: stats
+2021-02-02 17:55:30,604 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:37,098 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: status
+2021-02-02 17:55:37,099 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:37,099 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: status
+2021-02-02 17:55:37,100 DEBUG   SenderThread:495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:37,282 DEBUG   SenderThread:495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:52,074 DEBUG   SenderThread:495 [sender.py:send():117] send: telemetry
+2021-02-02 17:55:52,079 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-02 17:55:52,079 DEBUG   SenderThread:495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:52,281 DEBUG   SenderThread:495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:52,285 DEBUG   SenderThread:495 [sender.py:send():117] send: exit
+2021-02-02 17:55:52,285 INFO    SenderThread:495 [sender.py:send_exit():195] handling exit code: 0
+2021-02-02 17:55:52,285 INFO    SenderThread:495 [sender.py:send_exit():203] send defer
+2021-02-02 17:55:52,285 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,286 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: poll_exit
+2021-02-02 17:55:52,286 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:52,287 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 0
+2021-02-02 17:55:52,289 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,289 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:52,289 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-02-02 17:55:52,289 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 1
+2021-02-02 17:55:52,289 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:52,290 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 1
+2021-02-02 17:55:52,292 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,292 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:52,292 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-02-02 17:55:52,292 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 2
+2021-02-02 17:55:52,292 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:52,292 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 2
+2021-02-02 17:55:52,293 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,293 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:52,293 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-02-02 17:55:52,293 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 3
+2021-02-02 17:55:52,293 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:52,293 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 3
+2021-02-02 17:55:52,293 DEBUG   SenderThread:495 [sender.py:send():117] send: summary
+2021-02-02 17:55:52,295 INFO    SenderThread:495 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-02-02 17:55:52,295 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,295 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:52,296 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-02-02 17:55:52,296 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 4
+2021-02-02 17:55:52,296 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:52,296 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 4
+2021-02-02 17:55:52,296 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:52,296 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:52,296 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-02-02 17:55:52,296 INFO    SenderThread:495 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-02-02 17:55:52,477 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:53,244 INFO    SenderThread:495 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-summary.json
+2021-02-02 17:55:53,245 INFO    SenderThread:495 [dir_watcher.py:_on_file_modified():226] file/dir modified: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/config.yaml
+2021-02-02 17:55:53,245 INFO    SenderThread:495 [dir_watcher.py:finish():309] scan: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files
+2021-02-02 17:55:53,245 INFO    SenderThread:495 [dir_watcher.py:finish():315] scan save: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log output.log
+2021-02-02 17:55:53,245 INFO    SenderThread:495 [dir_watcher.py:finish():315] scan save: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/requirements.txt requirements.txt
+2021-02-02 17:55:53,248 DEBUG   Thread-15 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:53,248 INFO    SenderThread:495 [dir_watcher.py:finish():315] scan save: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-summary.json wandb-summary.json
+2021-02-02 17:55:53,248 INFO    SenderThread:495 [dir_watcher.py:finish():315] scan save: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/config.yaml config.yaml
+2021-02-02 17:55:53,249 INFO    SenderThread:495 [dir_watcher.py:finish():315] scan save: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-metadata.json wandb-metadata.json
+2021-02-02 17:55:53,249 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 5
+2021-02-02 17:55:53,252 DEBUG   Thread-16 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:53,252 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:53,252 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 5
+2021-02-02 17:55:53,253 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:53,253 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:53,253 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-02-02 17:55:53,258 INFO    SenderThread:495 [file_pusher.py:finish():176] shutting down file pusher
+2021-02-02 17:55:53,258 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 6
+2021-02-02 17:55:53,261 DEBUG   Thread-17 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:53,261 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:53,262 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 6
+2021-02-02 17:55:53,262 DEBUG   Thread-18 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-02-02 17:55:53,262 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:53,266 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:53,266 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-02-02 17:55:53,443 DEBUG   Thread-5  :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/nicolas-dufour/Video-instance-colorization/3b0yc1xc/file_stream HTTP/1.1" 200 None
+2021-02-02 17:55:53,444 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 7
+2021-02-02 17:55:53,445 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:53,445 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 7
+2021-02-02 17:55:53,445 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:53,445 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:53,445 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-02-02 17:55:53,445 INFO    SenderThread:495 [sender.py:send_request_defer():248] send defer: 8
+2021-02-02 17:55:53,446 DEBUG   SenderThread:495 [sender.py:send():117] send: final
+2021-02-02 17:55:53,446 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: defer
+2021-02-02 17:55:53,446 INFO    HandlerThread:495 [handler.py:handle_request_defer():107] handle defer: 8
+2021-02-02 17:55:53,446 DEBUG   SenderThread:495 [sender.py:send():117] send: footer
+2021-02-02 17:55:53,446 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:53,446 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: defer
+2021-02-02 17:55:53,447 INFO    SenderThread:495 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-02-02 17:55:53,456 DEBUG   Thread-15 :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:53,459 DEBUG   Thread-15 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 17:55:53,459 DEBUG   Thread-17 :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:53,462 DEBUG   Thread-17 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 17:55:53,471 DEBUG   Thread-16 :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:53,473 DEBUG   Thread-18 :495 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-02-02 17:55:53,476 DEBUG   Thread-16 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 17:55:53,477 DEBUG   Thread-18 :495 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-02-02 17:55:53,743 DEBUG   Thread-15 :495 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3b0yc1xc/output.log?Expires=1612374953&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=EEvfyVLRZz6IOyybFAVXTOCSJcWHDZBFpsLUF0DTWq6JYXm%2F%2BiJ6YKXOxzn5w1xzmDNpkKD4BlHIqeQ01hGTf6v5YAFmrkmGOTWEJoMO1izfbecPrcg1o6K6vSNCI4cDaZeZr7Wl6AkqsOC5InCUK7XMcOcWkSJhmi48bc8JotX4tel7TKtwUnoD8sadGZ9mqaIJN%2Bg7iBN%2FjCvrtjLU%2BGKjIxkn%2FXLI2odQJ5wVwBvz79%2FEuAGHbwd1DEoxoKg0VfGhOsRovdwxxk8JQDjO2pPSiT7v5fur79lW%2Fh4S5eNYV6jUlD2Yj4PxtNEYMev3qg86jLBkZQr22BVcyu38wQ%3D%3D HTTP/1.1" 200 0
+2021-02-02 17:55:53,744 INFO    Thread-15 :495 [upload_job.py:push():133] Uploaded file /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/output.log
+2021-02-02 17:55:53,762 DEBUG   Thread-17 :495 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3b0yc1xc/wandb-summary.json?Expires=1612374953&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=RAvYhBiMiVKao3jrdSEeO734c7TlnqTQnCjBU8BxBzb99OlHW%2FDfPzaSipV5HaFlQfSF6sGdFXEEJuDBFcc8OAzLAJjxbN64yZJZbzr%2BASfYB%2FcMGXsFzngp%2BJWwgtdmnrW69bAXwtCtEgSxTOYISaU5iPnLLHz9XOtkfTVvdiEad0wmjHAa0oGu%2FrFiX7zI35P4%2FI5WXYwdW3BhA%2F9Pm4uDsOixCe32eZ9PHJA7i9U8Ze2FVUczU8lDE6TUW4eJXV5JZwzcyrAwHbFFWNhcb8XsaXeSveUWNUcaCpl9TUJYGSasG6yUEG3nVtsJe%2BKioViR0WH01yH7C4NhuQcFnQ%3D%3D HTTP/1.1" 200 0
+2021-02-02 17:55:53,763 INFO    Thread-17 :495 [upload_job.py:push():133] Uploaded file /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/wandb-summary.json
+2021-02-02 17:55:53,772 DEBUG   Thread-18 :495 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3b0yc1xc/config.yaml?Expires=1612374953&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FrHGsiy2jlglm8VUXBEB%2F780i%2BXtJpnVrPOcw183PdZtLnZbTKk%2BwAIUS94Ud4fGW94SHp0oNk%2FJ%2BzuGNqMgOxYlLnjvMDlN9N1zwxX1pGwAUUakpX0rp55PmiJyzJH9e7fkSkmTqOxfloI1fF%2F1x6zt494Ey4gYy55Saqk3EAF%2BvvMVpyOWlzNH9TOR4GGk7pl7ben7CSBh%2FULukJbljQKvQ4M8aBhoJSdbPa3EjhjMicuSxYfhxMNEP%2B1s9l2y3uj9HoY5lk1hwMD9dR%2BKrpTvdxGX3woH821LpPbRhnsbMz2AS9nhBylD7ddAw0chjQS%2Fema%2BQcY5xPYU8iXdAA%3D%3D HTTP/1.1" 200 0
+2021-02-02 17:55:53,774 INFO    Thread-18 :495 [upload_job.py:push():133] Uploaded file /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/config.yaml
+2021-02-02 17:55:53,780 DEBUG   Thread-16 :495 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/nicolas-dufour/Video-instance-colorization/3b0yc1xc/requirements.txt?Expires=1612374953&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=b3KQ%2FYziTtC3rlsohMbd2xM9IluuX9zHHHTCeRYcP7bjrlH%2BBeDA9S%2FCx0pOcZFTF6rNgltp0hif2P%2BQsMvAoKMSQ1Su5nSbeMlDTeLCdoedPfebbuVtO37aAOiJZXx76onBoDg9uBU6ZQZsyG6mqx0WBcKNepCHJnZAelBj%2FMianvk%2B7qekbDi0wsrnv8aW9okEteetc%2Fh0Y3X5LwgqL3mc%2BOLSJvuo9aiJhw0RaZN1KtflcQZmYpi46zcg5WeWztbcgboqFw6thbcXJdGjWIkJzwe%2Fy5ul6IVoH5D%2B2uUUti178MNq8lQYMuHFts%2F72OcfhbD%2BEUkPpBZ%2BPTympg%3D%3D HTTP/1.1" 200 0
+2021-02-02 17:55:53,781 INFO    Thread-16 :495 [upload_job.py:push():133] Uploaded file /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/files/requirements.txt
+2021-02-02 17:55:54,298 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: poll_exit
+2021-02-02 17:55:54,299 DEBUG   SenderThread:495 [sender.py:send():117] send: request
+2021-02-02 17:55:54,299 DEBUG   SenderThread:495 [sender.py:send_request():126] send_request: poll_exit
+2021-02-02 17:55:54,299 INFO    SenderThread:495 [file_pusher.py:join():181] waiting for file pusher
+2021-02-02 17:55:54,301 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: get_summary
+2021-02-02 17:55:54,302 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: sampled_history
+2021-02-02 17:55:54,303 DEBUG   HandlerThread:495 [handler.py:handle_request():93] handle_request: shutdown
+2021-02-02 17:55:54,303 INFO    HandlerThread:495 [handler.py:finish():312] shutting down handler
+2021-02-02 17:55:54,446 INFO    WriterThread:495 [datastore.py:close():258] close: /content/instance-video-colorization/wandb/run-20210202_175504-3b0yc1xc/run-3b0yc1xc.wandb
+2021-02-02 17:55:55,299 INFO    SenderThread:495 [sender.py:finish():766] shutting down sender
+2021-02-02 17:55:55,299 INFO    SenderThread:495 [file_pusher.py:finish():176] shutting down file pusher
+2021-02-02 17:55:55,299 INFO    SenderThread:495 [file_pusher.py:join():181] waiting for file pusher
+2021-02-02 17:55:55,300 INFO    MainThread:495 [internal.py:handle_exit():156] Internal process exited

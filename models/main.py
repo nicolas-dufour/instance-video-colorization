@@ -32,9 +32,9 @@ class DeepVideoPriorColor(pl.LightningModule):
 
     def training_step(self, batch, batch_idx):
         if(self.current_epoch%10 == 1 and batch_idx==1):
-            self.compute_video('output/temp/temp_frames/', 'output/emp/temp_video.mp4')
-            wandb.log({"Car": wandb.Video("myvideo.mp4", caption = f"Epoch: {self.current_epoch}")})
-            os.remove('output/emp/temp_video.mp4')
+            self.compute_video('output/temp/temp_frames/', 'output/temp/temp_video.mp4')
+            wandb.log({"Car": wandb.Video('output/temp/temp_video.mp4', caption = f"Epoch: {self.current_epoch}")})
+            os.remove('output/temp/temp_video.mp4')
             for f in glob.glob("output/temp/temp_frames/*.jpg"):
                 os.remove(f)
         _, (grey_image, color_image) = batch
@@ -49,12 +49,12 @@ class DeepVideoPriorColor(pl.LightningModule):
         for _, batch in enumerate(tqdm(self.test_loader)):
             paths = list(batch[0])
             bw_images, _ = batch[1]
-            images = model(bw_images.to(self(device)))
+            images = self(bw_images.to(self.device))
             images = 255*torch.clip(images.permute(0,2,3,1),0,1).cpu().detach()
             images = np.uint8(images)
             for i, path in enumerate(paths):
                 cv2.imwrite(output_frames_dir+path, cv2.cvtColor(images[i], cv2.COLOR_RGB2BGR))
-        ffmpeg.input(f"{output_frames_dir}*.jpg", pattern_type='glob', framerate=25).output(output_vid_dir).run()
+        ffmpeg.input(f"{output_frames_dir}*.jpg", pattern_type='glob', framerate=25).output(output_vid_path).run()
 
 
 

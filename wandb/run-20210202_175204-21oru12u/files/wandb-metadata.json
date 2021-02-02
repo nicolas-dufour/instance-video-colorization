@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.19.112+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.6.9",
+    "heartbeatAt": "2021-02-02T17:52:06.904758",
+    "startedAt": "2021-02-02T17:52:04.443783",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": "10.1.243",
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-ea5189e4-7631-4891-a43f-ea3fd65801d9.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://nicolas-dufour:@github.com/nicolas-dufour/instance-video-colorization.git",
+        "commit": "1a025bb2d7ea0d2e4bd68d162e9c9eee2f5dc26c"
+    },
+    "email": "nicolas.dufourn@gmail.com",
+    "root": "/content/instance-video-colorization",
+    "host": "48d288c74287",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}
