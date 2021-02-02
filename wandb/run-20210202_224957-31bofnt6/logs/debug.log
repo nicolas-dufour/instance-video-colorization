@@ -1,0 +1,20 @@
+2021-02-02 22:49:57,411 INFO    MainThread:264 [wandb_setup.py:_flush():70] setting env: {}
+2021-02-02 22:49:57,411 INFO    MainThread:264 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-02-02 22:49:57,411 INFO    MainThread:264 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-02-02 22:49:57,411 INFO    MainThread:264 [wandb_setup.py:_flush():70] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f0dcc38a4e0>
+2021-02-02 22:49:57,412 INFO    MainThread:264 [wandb_init.py:_log_setup():318] Logging user logs to /content/instance-video-colorization/wandb/run-20210202_224957-31bofnt6/logs/debug.log
+2021-02-02 22:49:57,412 INFO    MainThread:264 [wandb_init.py:_log_setup():319] Logging internal logs to /content/instance-video-colorization/wandb/run-20210202_224957-31bofnt6/logs/debug-internal.log
+2021-02-02 22:49:59,896 INFO    MainThread:264 [wandb_run.py:_console_start():1399] atexit reg
+2021-02-02 22:49:59,896 INFO    MainThread:264 [wandb_run.py:_redirect():1262] redirect: SettingsConsole.WRAP
+2021-02-02 22:49:59,898 INFO    MainThread:264 [wandb_run.py:_redirect():1297] Wrapping output streams.
+2021-02-02 22:49:59,898 INFO    MainThread:264 [wandb_run.py:_redirect():1313] Redirects installed.
+2021-02-02 22:49:59,904 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 22:49:59,913 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 22:49:59,917 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 22:50:01,351 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 22:50:01,535 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 22:50:06,627 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 22:57:51,963 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 22:57:53,610 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
+2021-02-02 22:58:00,098 INFO    MainThread:264 [wandb_init.py:_pause_backend():239] pausing backend
+2021-02-02 23:01:57,177 INFO    MainThread:264 [wandb_init.py:_resume_backend():244] resuming backend
