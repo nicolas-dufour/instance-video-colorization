@@ -58,3 +58,29 @@ hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+warning: adding embedded git repository: instance-video-colorization
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> instance-video-colorization
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached instance-video-colorization
+hint: 
+hint: See "git help submodule" for more information.
+[master 48fad32] Added video loggining
+ 5 files changed, 1804 insertions(+)
+ create mode 160000 instance-video-colorization
+To https://github.com/nicolas-dufour/instance-video-colorization.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://nicolas-dufour:8dS29ta%26v%26N%2A77d@github.com/nicolas-dufour/instance-video-colorization.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+/content/instance-video-colorization/instance-video-colorization
