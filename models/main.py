@@ -13,9 +13,10 @@ import numpy as np
  
 
 class DeepVideoPriorColor(pl.LightningModule):
-    def __init__(self, test_loader, loss='perceptual', irt=True):
+    def __init__(self, test_loader, loss='perceptual', irt=None, logging=False):
         super().__init__()
         self.irt = irt
+        self.logging = logging
         self.test_loader = test_loader
         out_channels = 6 if irt else 3
         self.unet = UNet(3, out_channels, 32)
@@ -33,7 +34,7 @@ class DeepVideoPriorColor(pl.LightningModule):
         return self.unet(x)
 
     def training_step(self, batch, batch_idx):
-        if(self.current_epoch%10 == 1 and batch_idx==1):
+        if(self.current_epoch%10 == 1 and batch_idx==1 and self.logging):
             self.compute_video('output/temp/temp_frames/', 'output/temp/temp_video.mp4')
             wandb.log({"Car": wandb.Video('output/temp/temp_video.mp4', caption = f"Epoch: {self.current_epoch}")})
             os.remove('output/temp/temp_video.mp4')
@@ -46,7 +47,7 @@ class DeepVideoPriorColor(pl.LightningModule):
             output_minor = output[:,3:,:,:]
             diff_map_main = torch.sum(torch.abs(output_main - color_image)/(grey_image+1e-1) , dim=1, keepdim=True)
             diff_map_minor = torch.sum(torch.abs(output_minor - color_image)/(grey_image+1e-1) , dim=1, keepdim=True)
-            diff_map_minor = torch.maximum(diff_map_minor, 0.005*torch.ones(diff_map_minor.size(),device=self.device))
+            diff_map_minor = torch.maximum(diff_map_minor, self.irt*torch.ones(diff_map_minor.size(),device=self.device))
             confidence_map = torch.lt(diff_map_main, diff_map_minor).repeat(1,3,1,1).float()
             loss = self.loss(output_main*confidence_map, color_image*confidence_map) \
                     + self.loss(output_minor*(1-confidence_map), color_image*(1-confidence_map))
