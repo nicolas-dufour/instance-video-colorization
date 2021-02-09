@@ -2,6 +2,7 @@
 import os, sys, random, math, cv2, pickle, subprocess
 import numpy as np
 from PIL import Image
+import cv2
 
 ### torch lib
 import torch
@@ -9,7 +10,6 @@ from torch.utils.data.sampler import Sampler
 from torch.utils.data import DataLoader
 
 ### custom lib
-from networks.resample2d_package.modules.resample2d import Resample2d
 
 FLO_TAG = 202021.25
 EPS = 1e-12
@@ -500,6 +500,9 @@ def compute_flow_gradients(flow):
 
     return flow_x_du, flow_x_dv, flow_y_du, flow_y_dv
 
+def warp(img, flow):
+    
+    return cv2.remap(img, flow, None, cv2.INTER_LINEAR)
 
 def detect_occlusion(fw_flow, bw_flow):
     
@@ -507,19 +510,7 @@ def detect_occlusion(fw_flow, bw_flow):
     ## bw-flow: img2 => img1
 
     
-    with torch.no_grad():
-
-        ## convert to tensor
-        fw_flow_t = img2tensor(fw_flow).cuda()
-        bw_flow_t = img2tensor(bw_flow).cuda()
-
-        ## warp fw-flow to img2
-        flow_warping = Resample2d().cuda()
-        fw_flow_w = flow_warping(fw_flow_t, bw_flow_t)
-    
-        ## convert to numpy array
-        fw_flow_w = tensor2img(fw_flow_w)
-
+    fw_flow_w = warp(fw_flow,bw_flow)
 
     ## occlusion
     fb_flow_sum = fw_flow_w + bw_flow

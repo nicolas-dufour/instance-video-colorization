@@ -5,6 +5,7 @@ from __future__ import print_function
 import os, sys, argparse, glob, re, math, pickle, cv2
 from datetime import datetime
 import numpy as np
+from collections import namedtuple
 
 ### torch lib
 import torch
@@ -19,27 +20,19 @@ from models.raft.raft import RAFT
 import utils
 def warp(img, flow):
     
-    return cv2.remap(img, flow, None, cv.INTER_LINEAR)
+    return cv2.remap(img, flow, None, cv2.INTER_LINEAR)
 
-
+class Args:
+    pass
 def compute_warp_error(video_path):
-
-    flow_options = {}
-    flow_options.rgb_max = 1.0
-    flow_options.fp16 = False
-
-    print(opts)
-
-      
+    args = argparse.Namespace(small=False, mixed_precision=False)
     ### initialize FlowNet
-    print('===> Initializing model from %s...' %opts.model)
-    model = RAFT(flow_options)
+    model = torch.nn.DataParallel(RAFT(args))
 
     ### load pre-trained FlowNet
-    model_filename = os.path.join("pretrained_models", "RAFT_checkpoint.pth.tar")
+    model_filename = os.path.join("pretrained_models", "RAFT_checkpoint.pth")
     print("===> Load %s" %model_filename)
-    checkpoint = torch.load(model_filename)
-    model.load_state_dict(checkpoint['state_dict'])
+    model.load_state_dict(torch.load(model_filename))
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
@@ -49,19 +42,19 @@ def compute_warp_error(video_path):
     vidcap = cv2.VideoCapture(video_path)
     success,image = vidcap.read()
     frame_list = [image]
-    count = 0
     success = True
     while success:
         success,image = vidcap.read()
         frame_list.append(image)
-        count += 1
 
     warping_error = 0
-    for t in range(1,len(frame_list)):
-        
+    for t in range(0,len(frame_list)-2):
        ### load input images 
         img1 = frame_list[t]
         img2 = frame_list[t+1]
+
+        if(img2 is None):
+            print(t)
         
         ### resize image
         size_multiplier = 64
@@ -71,38 +64,38 @@ def compute_warp_error(video_path):
         H_sc = int(math.ceil(float(H_orig) / size_multiplier) * size_multiplier)
         W_sc = int(math.ceil(float(W_orig) / size_multiplier) * size_multiplier)
         
-        img1 = cv2.resize(img1, (W_sc, H_sc))
-        img2 = cv2.resize(img2, (W_sc, H_sc))
+        img1_r = cv2.resize(img1, (W_sc, H_sc))
+        img2_r = cv2.resize(img2, (W_sc, H_sc))
     
         with torch.no_grad():
 
             ### convert to tensor
-            img1 = utils.img2tensor(img1).to(device)
-            img2 = utils.img2tensor(img2).to(device)
+            img1_t = utils.img2tensor(img1_r).to(device)
+            img2_t = utils.img2tensor(img2_r).to(device)
     
             ### compute fw flow
-            fw_flow = model(img1, img2)
+            fw_flow = model(img1_t, img2_t, test_mode=True)[1]
             fw_flow = utils.tensor2img(fw_flow)
         
             ### compute bw flow
-            bw_flow = model(img2, img1)
+            bw_flow = model(img1_t, img2_t, test_mode=True)[1]
             bw_flow = utils.tensor2img(bw_flow)
 
 
         ### resize flow
         fw_flow = utils.resize_flow(fw_flow, W_out = W_orig, H_out = H_orig) 
         bw_flow = utils.resize_flow(bw_flow, W_out = W_orig, H_out = H_orig) 
-        
         ### compute occlusion
         fw_occ = utils.detect_occlusion(bw_flow, fw_flow)
+        noc_mask = 1 - fw_occ
+        warp_img1 = warp(img1,fw_flow)
 
-        noc_mask = 1 - occ_mask
+        diff = noc_mask[:,:,np.newaxis]*np.abs(img2-warp_img1)
 
-        warp_img1 = warp(img1,flow)
-
-        diff = noc_mask*np.abs(img2-warp_img1)
-
-        warping_error += diff.sum()/noc_mask.sum()
+        N = noc_mask.sum()
+        if N==0:
+            N=img2.shape[0]*img2.shape[1]
+        warping_error += diff.sum()/N
     warping_error = warping_error/(len(frame_list)-1)
     return warping_error
         
