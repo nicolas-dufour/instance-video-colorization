@@ -16,10 +16,11 @@ import cv2
 
 ### custom lib
 import networks
-from networks.FlowNet2 import FlowNet2
-from networks.resample2d_package.modules.resample2d import Resample2d
+from models.raft import RAFT
 import utils
-
+def warp(img, flow)
+    
+    return cv2.remap(img, flow, None, cv.INTER_LINEAR)
 
 
 def compute_warp_error(video_path)
@@ -33,10 +34,10 @@ def compute_warp_error(video_path)
       
     ### initialize FlowNet
     print('===> Initializing model from %s...' %opts.model)
-    model = FlowNet2(flow_options)
+    model = RAFT(flow_options)
 
     ### load pre-trained FlowNet
-    model_filename = os.path.join("pretrained_models", "FlowNet2_checkpoint.pth.tar")
+    model_filename = os.path.join("pretrained_models", "RAFT_checkpoint.pth.tar")
     print("===> Load %s" %model_filename)
     checkpoint = torch.load(model_filename)
     model.load_state_dict(checkpoint['state_dict'])
@@ -44,7 +45,7 @@ def compute_warp_error(video_path)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
     model.eval()
-    flow_warping = Resample2d().to(device)
+
   
     vidcap = cv2.VideoCapture(video_path)
     success,image = vidcap.read()
@@ -98,18 +99,8 @@ def compute_warp_error(video_path)
 
         noc_mask = 1 - occ_mask
 
+        warp_img1 = warp(img1,flow)
 
-        with torch.no_grad():
-
-            ## convert to tensor
-            img1 = utils.img2tensor(img1).to(device)
-            flow = utils.img2tensor(flow).to(device)
-
-            ## warp img2
-            warp_img1 = flow_warping(img1, flow)
-
-            ## convert to numpy array
-            warp_img1 = utils.tensor2img(warp_img1)
         diff = noc_mask*np.abs(img2-warp_img1)
 
         warping_error += diff.sum()/noc_mask.sum()
