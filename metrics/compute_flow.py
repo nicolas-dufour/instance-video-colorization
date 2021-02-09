@@ -15,15 +15,14 @@ import torchvision.transforms as transforms
 import cv2
 
 ### custom lib
-import networks
-from models.raft import RAFT
+from models.raft.raft import RAFT
 import utils
-def warp(img, flow)
+def warp(img, flow):
     
     return cv2.remap(img, flow, None, cv.INTER_LINEAR)
 
 
-def compute_warp_error(video_path)
+def compute_warp_error(video_path):
 
     flow_options = {}
     flow_options.rgb_max = 1.0
