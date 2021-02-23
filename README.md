@@ -11,7 +11,7 @@ To see the image colorization process applied to video see this repo: https://gi
 
 | Black and White video             | Colored Frame by Frame                    | Colored and regularized                  |
 | --------------------------------- | -----------------------------             | ---------------------------------------- |
-|<video src="examples/blackswan-bw.mp4" width="320" height="200" controls preload></video>  | <video src="examples/blackswan-colored.mp4" width="320" height="200" controls preload></video>     | <video src="examples/blackswan-smoothed.mp4" width="320" height="200" controls preload></video>  |
+|![](examples/swan-bw.gif)  | ![](examples/swan-colorized.gif)     | ![](examples/swan-smoothed.gif)   |
 
 
 
